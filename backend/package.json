@@ -1,0 +1,24 @@
+{
+  "name": "intentscout-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --hot index.ts",
+    "start": "bun run index.ts",
+    "check": "biome check --write .",
+    "check:ci": "biome check ."
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.7.6",
+    "hono": "^4.11.9",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "mammoth": "^1.9.0",
+    "pdf-parse": "^1.1.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/pdf-parse": "^1.1.4",
+    "typescript": "~5.9.x"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "intentscout",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check": "biome check --write .",
+    "check:ci": "biome check ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": ["biome check --write --no-errors-on-unmatched"]
+  }
+}
