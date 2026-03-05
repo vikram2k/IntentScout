@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun run --hot index.ts",
-    "start": "bun run index.ts",
+    "dev": "bun run --hot server.ts",
+    "start": "bun run server.ts",
     "build": "tsup",
     "vercel-build": "bun run build",
     "check": "biome check --write .",
