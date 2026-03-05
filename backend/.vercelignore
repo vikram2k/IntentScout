@@ -1,0 +1,5 @@
+# Exclude all TypeScript source files — Vercel only needs the pre-built api/index.js
+**/*.ts
+node_modules
+bun.lock
+docker-compose.yml
