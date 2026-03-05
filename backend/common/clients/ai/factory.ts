@@ -1,6 +1,6 @@
 import { settings } from "@/common/config/settings"
 import type { IAIClient } from "./iAIClient"
-import { AnthropicClient } from "./openAIClient"
+import { AnthropicClient } from "./anthropicClient"
 
 export const createAIClient = (): IAIClient => {
   return new AnthropicClient(settings.anthropic.apiKey, settings.anthropic.model)
