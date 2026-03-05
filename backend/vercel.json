@@ -1,4 +1,5 @@
 {
+  "buildCommand": "true",
   "rewrites": [{ "source": "/:path*", "destination": "/api/index" }],
   "functions": {
     "api/index.js": {
