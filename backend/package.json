@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "bun run --hot index.ts",
     "start": "bun run index.ts",
+    "build": "tsup",
     "check": "biome check --write .",
     "check:ci": "biome check ."
   },
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@types/bun": "latest",
     "@types/pdf-parse": "^1.1.4",
+    "tsup": "^8.5.1",
     "typescript": "~5.9.x"
   }
 }

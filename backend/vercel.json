@@ -1,6 +1,8 @@
 {
+  "buildCommand": "bun run build",
+  "rewrites": [{ "source": "/(.*)", "destination": "/api/index" }],
   "functions": {
-    "index.ts": {
+    "api/index.js": {
       "maxDuration": 60
     }
   }
