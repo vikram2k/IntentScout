@@ -35,9 +35,7 @@ app.get("/health", (c) => c.json({ status: "ok" }))
 app.route("/themes", themesRouter)
 app.route("/serp", serpRouter)
 
-export default {
-  port: settings.server.port,
-  fetch: app.fetch,
-}
+// Bun uses app.fetch + PORT env var; Vercel uses app as default export
+export default app
 
 console.log(`🚀 IntentScout API running on port ${settings.server.port}`)
