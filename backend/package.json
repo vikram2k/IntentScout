@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun run --hot server.ts",
-    "start": "bun run server.ts",
+    "dev": "bun run --hot main.ts",
+    "start": "bun run main.ts",
     "build": "tsup",
     "check": "biome check --write .",
     "check:ci": "biome check ."
