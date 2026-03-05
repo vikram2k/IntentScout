@@ -7,5 +7,6 @@ export default defineConfig({
   splitting: false,
   clean: true,
   outDir: "api",
-  // Leave node_modules external — only bundle local source and resolve @/ aliases
+  // Bundle all dependencies into a single self-contained file for Vercel
+  noExternal: [/.*/],
 })
