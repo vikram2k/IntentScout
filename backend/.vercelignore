@@ -1,9 +1,0 @@
-# Exclude source files — only deploy pre-built api/index.js
-server.ts
-common/
-controllers/
-routers/
-tsup.config.ts
-tsconfig.json
-bun.lock
-docker-compose.yml
